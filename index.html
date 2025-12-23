@@ -1,0 +1,390 @@
+﻿<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karimul Mowla | Elite Digital Expert</title>
+
+<link rel="icon" type="image/png" href="rafi.jpg">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+:root{
+--navy:#001f3f;
+--blue:#2563eb;
+--light:#e0f2fe;
+--card:#0b2a4a;
+}
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#001f3f,#020617);
+color:white;
+scroll-behavior:smooth;
+}
+header{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+background:radial-gradient(circle at top,#2563eb,#001f3f);
+}
+header img{
+width:170px;height:170px;border-radius:50%;
+border:6px solid #38bdf8;
+box-shadow:0 0 60px #38bdf8;
+}
+header h1{font-size:2.7rem;margin:20px 0 5px}
+header p{max-width:900px;font-size:1.15rem;color:#cbd5f5}
+
+nav{
+margin-top:30px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center
+}
+nav button{
+background:linear-gradient(135deg,#38bdf8,#2563eb);
+border:none;color:#020617;
+padding:12px 22px;border-radius:50px;
+font-weight:700;cursor:pointer;transition:.3s
+}
+nav button:hover{transform:translateY(-3px);box-shadow:0 10px 30px #38bdf8}
+
+section{
+padding:90px 20px;max-width:1200px;margin:auto
+}
+section h2{
+font-size:2.3rem;margin-bottom:35px;
+display:flex;align-items:center;gap:15px
+}
+
+.card{
+background:linear-gradient(160deg,#0b2a4a,#020617);
+border-radius:26px;padding:32px;
+box-shadow:0 30px 60px rgba(37,99,235,.4);
+transition:.4s
+}
+.card:hover{transform:translateY(-8px)}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px
+}
+
+.icon{
+width:52px;height:52px;
+display:flex;align-items:center;justify-content:center;
+border-radius:50%;
+background:linear-gradient(135deg,#38bdf8,#2563eb);
+color:#020617;font-size:22px
+}
+
+footer{
+background:#020617;
+padding:40px;
+text-align:center;
+color:#94a3b8
+}
+
+@media(max-width:768px){
+header h1{font-size:2.1rem}
+section h2{font-size:1.9rem}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="rafi.jpg" alt="Karimul Mowla">
+<h1>Karimul Mowla</h1>
+<p>
+Elite App Developer • High-Performance Website Developer •  
+Digital Marketing Strategist • AI-Driven Business Solutions Expert
+</p>
+
+<nav>
+<button onclick="go('about')">About</button>
+<button onclick="go('education')">Education</button>
+<button onclick="go('skills')">Skills</button>
+<button onclick="go('working')">Working Sector</button>
+<button onclick="go('experience')">Experience</button>
+<button onclick="go('projects')">Projects</button>
+<button onclick="go('business')">Contact</button>
+</nav>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+<h2><span class="icon"><i class="fa-solid fa-user"></i></span>Professional Profile</h2>
+<div class="card">
+<p>
+I am <b>Karimul Mowla</b>, a future-focused digital expert from Bangladesh with a strong foundation in technology, business strategy, and innovation.
+</p>
+<p>
+Since 2021, I have been building scalable Android applications, modern websites, and data-driven digital growth systems powered by AI and advanced marketing strategies.
+</p>
+<p>
+I combine <b>technology, leadership, creativity, and strategic thinking</b> to help brands, startups, and individuals achieve measurable digital success.
+</p>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2><span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>Academic Background</h2>
+<div class="grid">
+
+<div class="card">
+<h3>🎓 SSC – Science</h3>
+<p><b>Year:</b> 2019</p>
+<p><b>Grade:</b> 4.39</p>
+<p><b>School:</b> Modhya Sontushpur High School</p>
+</div>
+
+<div class="card">
+<h3>🎓 HSC – Science</h3>
+<p><b>Year:</b> 2022</p>
+<p><b>Grade:</b> 3.92</p>
+<p><b>College:</b> Mustafizur Rahman University College</p>
+</div>
+
+<div class="card">
+<h3>🎓 BSc in Electrical & Electronics Engineering</h3>
+<p><b>Status:</b> Running</p>
+<p><b>University:</b> Port City International University</p>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2><span class="icon"><i class="fa-solid fa-bolt"></i></span>Core Expertise</h2>
+<div class="grid">
+<div class="card"><b>📱 App Development</b><p>High-performance Android apps with modern UI/UX.</p></div>
+<div class="card"><b>🌐 Website Development</b><p>Responsive, fast, SEO-optimized websites.</p></div>
+<div class="card"><b>🤖 AI Management</b><p>Smart AI-powered automation & workflows.</p></div>
+<div class="card"><b>📊 Digital Marketing</b><p>SEO, ASO, Google Ads, Facebook Ads.</p></div>
+<div class="card"><b>👥 Leadership & Team Management</b><p>Business execution & people leadership.</p></div>
+<div class="card"><b>🗣 English Communication</b><p>Professional business & technical communication.</p></div>
+</div>
+</section>
+
+<!-- WORKING -->
+<section id="working">
+<h2><span class="icon"><i class="fa-solid fa-briefcase"></i></span>Professional Working Sectors</h2>
+<div class="grid">
+<div class="card">📱 <b>App Development</b></div>
+<div class="card">🌐 <b>Website Development</b></div>
+<div class="card">📈 <b>Marketing Strategies</b></div>
+<div class="card">📊 <b>Digital Marketing</b></div>
+<div class="card">✍️ <b>Content Writing</b></div>
+<div class="card">🛍️ <b>Product Review</b></div>
+<div class="card">🌐 <b>Language Translation</b></div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2><span class="icon"><i class="fa-solid fa-chart-line"></i></span>Professional Experience</h2>
+<div class="card">
+<p><b>2021 – Present</b></p>
+<ul>
+<li>Android Application Development</li>
+<li>Professional Website Development</li>
+<li>SEO, ASO, Google Ads & Facebook Ads</li>
+<li>AI-Based Business Automation</li>
+</ul>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2><span class="icon"><i class="fa-solid fa-folder-open"></i></span>Selected Demo Projects</h2>
+<div class="grid">
+<div class="card">🛒 <b>E-commerce App</b></div>
+<div class="card">❤️ <b>Matrimony App</b></div>
+<div class="card">📰 <b>News Website</b></div>
+<div class="card">🏢 <b>Business Portfolio</b></div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="business">
+<h2><span class="icon"><i class="fa-solid fa-envelope"></i></span>Business Inquiries</h2>
+<div class="card">
+<p><b>WhatsApp:</b> +8801785544035</p>
+<p><b>Email:</b> mowla01785544@gmail.com</p>
+</div>
+</section>
+
+<footer>
+<p>© 2025 Karimul Mowla • Elite Digital Portfolio</p>
+</footer>
+
+<script>
+function go(id){
+document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
+
+On Mon, 22 Dec 2025, 6:51 pm DU NS, <mowla01785544@gmail.com> wrote:
+
+    <!DOCTYPE html><html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karimul Mowla | Digital Expert</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/48/domain.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+    :root{
+    --navy:#001f3f;
+    --blue:#2563eb;
+    --light:#e0f2fe;
+    --card:#0b2a4a;
+    }
+    *{box-sizing:border-box}
+    body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(180deg,#001f3f,#020617);
+    color:white;
+    scroll-behavior:smooth;
+    }
+    header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    background:radial-gradient(circle at top,#2563eb,#001f3f);
+    }
+    header img{
+    width:170px;height:170px;border-radius:50%;
+    border:6px solid #38bdf8;
+    box-shadow:0 0 60px #38bdf8;
+    }
+    header h1{font-size:2.5rem;margin:20px 0 5px}
+    header p{max-width:800px;font-size:1.1rem;color:#cbd5f5}
+    nav{
+    margin-top:30px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center
+    }
+    nav button{
+    background:linear-gradient(135deg,#38bdf8,#2563eb);
+    border:none;color:#020617;
+    padding:12px 22px;border-radius:50px;
+    font-weight:700;cursor:pointer;transition:.3s
+    }
+    nav button:hover{transform:translateY(-3px);box-shadow:0 10px 30px #38bdf8}
+    section{
+    padding:80px 20px;max-width:1200px;margin:auto
+    }
+    section h2{
+    font-size:2.2rem;margin-bottom:30px;
+    display:flex;align-items:center;gap:15px
+    }
+    .card{
+    background:linear-gradient(160deg,#0b2a4a,#020617);
+    border-radius:24px;padding:30px;
+    box-shadow:0 30px 60px rgba(37,99,235,.4);
+    transition:.4s
+    }
+    .card:hover{transform:translateY(-8px)}
+    .grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px
+    }
+    .icon{
+    width:50px;height:50px;
+    display:flex;align-items:center;justify-content:center;
+    border-radius:50%;
+    background:linear-gradient(135deg,#38bdf8,#2563eb);
+    color:#020617;font-size:22px
+    }
+    footer{
+    background:#020617;padding:40px;text-align:center;color:#94a3b8
+    }
+    @media(max-width:768px){
+    header h1{font-size:2rem}
+    section h2{font-size:1.8rem}
+    }
+    </style>
+    </head>
+    <body><header>
+    <img src="PROFILE_PHOTO_UPLOADED">
+    <h1>Karimul Mowla</h1>
+    <p>Elite App Developer • Website Developer • Digital Marketing Strategist • AI & Business Solutions Expert</p>
+    <nav>
+    <button onclick="go('about')">About</button>
+    <button onclick="go('skills')">Skills</button>
+    <button onclick="go('working')">Working Sector</button>
+    <button onclick="go('experience')">Experience</button>
+    <button onclick="go('projects')">Projects</button>
+    <button onclick="go('business')">Contact</button>
+    </nav>
+    </header><section id="about">
+    <h2><span class="icon"><i class="fa-solid fa-user"></i></span>About Me</h2>
+    <div class="card">
+    <p>I am <b>Karimul Mowla</b>, a future-focused digital professional from Bangladesh. Since 2021, I have been building powerful Android apps, modern websites, and digital growth systems using AI-driven strategies.</p>
+    <p>I blend <b>technology, creativity, leadership, and marketing intelligence</b> to deliver scalable and impactful solutions. I am also a travel & fashion content creator.</p>
+    </div>
+    </section><section id="skills">
+    <h2><span class="icon"><i class="fa-solid fa-bolt"></i></span>Core Skills</h2>
+    <div class="grid">
+    <div class="card"><b>📱 App Development</b><p>High-performance Android apps with modern UI/UX.</p></div>
+    <div class="card"><b>🌐 Website Development</b><p>Responsive, fast, SEO-optimized websites.</p></div>
+    <div class="card"><b>🤖 AI Management</b><p>Smart AI-powered automation & workflows.</p></div>
+    <div class="card"><b>📊 Digital Marketing</b><p>SEO, ASO, Google Ads, Facebook Ads.</p></div>
+    <div class="card"><b>👥 Leadership</b><p>Team management & business execution.</p></div>
+    <div class="card"><b>🗣 English Communication</b><p>Professional business & technical communication.</p></div>
+    </div>
+    </section><section id="working">
+    <h2><span class="icon"><i class="fa-solid fa-briefcase"></i></span>Working Sectors</h2>
+    <div class="grid">
+    <div class="card">📱 <b>App Development</b><p>E‑commerce, educational, business & dynamic apps.</p></div>
+    <div class="card">🌐 <b>Website Development</b><p>Company, blog, news & e‑commerce websites.</p></div>
+    <div class="card">📈 <b>Marketing Strategies</b><p>Digital growth & brand positioning strategies.</p></div>
+    <div class="card">📊 <b>Digital Marketing</b><p>Result‑driven ads & organic growth.</p></div>
+    <div class="card">✍️ <b>Content Writing</b><p>SEO‑focused content for apps & websites.</p></div>
+    <div class="card">🛍️ <b>Product Review</b><p>Authentic product & app reviews.</p></div>
+    <div class="card">🌐 <b>Language Translation</b><p>Professional & accurate translations.</p></div>
+    </div>
+    </section><section id="experience">
+    <h2><span class="icon"><i class="fa-solid fa-chart-line"></i></span>Experience</h2>
+    <div class="card">
+    <p><b>2021 – Present</b></p>
+    <ul>
+    <li>Android App Development</li>
+    <li>Website Development</li>
+    <li>SEO, ASO, Google & Facebook Ads</li>
+    <li>Business & AI Automation Solutions</li>
+    </ul>
+    </div>
+    </section><section id="projects">
+    <h2><span class="icon"><i class="fa-solid fa-folder"></i></span>Demo Projects</h2>
+    <div class="grid">
+    <div class="card">🛒 <b>E‑commerce App</b></div>
+    <div class="card">❤️ <b>Matrimony App</b></div>
+    <div class="card">📰 <b>News Website</b></div>
+    <div class="card">🏢 <b>Business Portfolio</b></div>
+    </div>
+    </section><section id="business">
+    <h2><span class="icon"><i class="fa-solid fa-envelope"></i></span>Business Inquiries</h2>
+    <div class="card">
+    <p><b>WhatsApp:</b> +8801785544035</p>
+    <p><b>Email:</b> mowla01785544@gmail.com</p>
+    </div>
+    </section><footer>
+    <p>© 2025 Karimul Mowla • All Rights Reserved</p>
+    </footer><script>
+    function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+    </script></body>
+    </html>
