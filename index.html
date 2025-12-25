@@ -1,91 +1,158 @@
-﻿<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karimul Mowla | Elite Digital Expert</title>
+<title>Karimul Mowla | Digital, AI & Robotics Expert</title>
 
-<link rel="icon" type="image/png" href="rafi.jpg">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link rel="icon" href="https://img.icons8.com/fluency/48/domain.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 :root{
---navy:#001f3f;
+--navy:#020617;
 --blue:#2563eb;
---light:#e0f2fe;
+--sky:#38bdf8;
 --card:#0b2a4a;
 }
 *{box-sizing:border-box}
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
-background:linear-gradient(180deg,#001f3f,#020617);
+background:linear-gradient(180deg,#020617,#001f3f);
 color:white;
 scroll-behavior:smooth;
+overflow-x:hidden;
 }
+
+/* HEADER */
 header{
 min-height:100vh;
 display:flex;
 flex-direction:column;
-justify-content:center;
 align-items:center;
+justify-content:center;
 text-align:center;
 padding:40px 20px;
-background:radial-gradient(circle at top,#2563eb,#001f3f);
+background:radial-gradient(circle at top,#2563eb,#020617);
 }
 header img{
 width:170px;height:170px;border-radius:50%;
-border:6px solid #38bdf8;
-box-shadow:0 0 60px #38bdf8;
+border:6px solid var(--sky);
+box-shadow:0 0 60px var(--sky);
 }
-header h1{font-size:2.7rem;margin:20px 0 5px}
-header p{max-width:900px;font-size:1.15rem;color:#cbd5f5}
+header h1{font-size:2.8rem;margin:20px 0 8px}
+header p{max-width:950px;font-size:1.15rem;color:#cbd5f5}
 
+/* NAV */
 nav{
-margin-top:30px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center
+margin-top:30px;
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
 }
 nav button{
 background:linear-gradient(135deg,#38bdf8,#2563eb);
-border:none;color:#020617;
-padding:12px 22px;border-radius:50px;
-font-weight:700;cursor:pointer;transition:.3s
+border:none;
+color:#020617;
+padding:12px 22px;
+border-radius:50px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
 }
-nav button:hover{transform:translateY(-3px);box-shadow:0 10px 30px #38bdf8}
+nav button i{margin-right:6px}
+nav button:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 30px var(--sky);
+}
 
+/* SLIDER */
+.slider{
+width:100%;
+max-width:1100px;
+margin:60px auto 0;
+overflow:hidden;
+border-radius:50px;
+box-shadow:0 30px 70px rgba(0,0,0,.6);
+}
+.slides{
+display:flex;
+width:500%;
+animation:slide 25s infinite;
+}
+.slides img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:50px;
+}
+@keyframes slide{
+0%,20%{margin-left:0}
+25%,45%{margin-left:-100%}
+50%,70%{margin-left:-200%}
+75%,95%{margin-left:-300%}
+100%{margin-left:-400%}
+}
+
+/* SECTIONS */
 section{
-padding:90px 20px;max-width:1200px;margin:auto
+padding:90px 20px;
+max-width:1200px;
+margin:auto;
 }
 section h2{
-font-size:2.3rem;margin-bottom:35px;
-display:flex;align-items:center;gap:15px
+font-size:2.4rem;
+margin-bottom:40px;
+display:flex;
+align-items:center;
+gap:18px;
+}
+.icon{
+width:64px;height:64px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:linear-gradient(135deg,#38bdf8,#2563eb);
+color:#020617;
+font-size:28px;
+box-shadow:0 0 25px rgba(56,189,248,.9);
 }
 
+/* CARD */
 .card{
 background:linear-gradient(160deg,#0b2a4a,#020617);
-border-radius:26px;padding:32px;
-box-shadow:0 30px 60px rgba(37,99,235,.4);
-transition:.4s
+border-radius:28px;
+padding:34px;
+box-shadow:0 30px 60px rgba(37,99,235,.45);
+transition:.4s;
 }
-.card:hover{transform:translateY(-8px)}
+.card:hover{transform:translateY(-10px)}
+.card i{
+font-size:34px;
+margin-bottom:16px;
+color:#38bdf8;
+display:block;
+}
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px
+gap:30px;
 }
 
-.icon{
-width:52px;height:52px;
-display:flex;align-items:center;justify-content:center;
-border-radius:50%;
-background:linear-gradient(135deg,#38bdf8,#2563eb);
-color:#020617;font-size:22px
-}
+/* SOCIAL */
+.social i{font-size:42px;margin-bottom:10px}
+.social a{text-decoration:none;color:white}
 
+/* FOOTER */
 footer{
 background:#020617;
 padding:40px;
 text-align:center;
-color:#94a3b8
+color:#94a3b8;
 }
 
 @media(max-width:768px){
@@ -101,120 +168,139 @@ section h2{font-size:1.9rem}
 <img src="rafi.jpg" alt="Karimul Mowla">
 <h1>Karimul Mowla</h1>
 <p>
-Elite App Developer • High-Performance Website Developer •  
-Digital Marketing Strategist • AI-Driven Business Solutions Expert
+Digital Architect • Android & Web Engineer •  
+AI, Robotics & Embedded Systems Specialist •  
+Strategic Digital Marketing Professional
 </p>
 
 <nav>
-<button onclick="go('about')">About</button>
-<button onclick="go('education')">Education</button>
-<button onclick="go('skills')">Skills</button>
-<button onclick="go('working')">Working Sector</button>
-<button onclick="go('experience')">Experience</button>
-<button onclick="go('projects')">Projects</button>
-<button onclick="go('business')">Contact</button>
+<button onclick="go('about')"><i class="fa-solid fa-user"></i>About</button>
+<button onclick="go('education')"><i class="fa-solid fa-graduation-cap"></i>Education</button>
+<button onclick="go('skills')"><i class="fa-solid fa-brain"></i>Skills</button>
+<button onclick="go('sector')"><i class="fa-solid fa-briefcase"></i>Sector</button>
+<button onclick="go('experience')"><i class="fa-solid fa-chart-line"></i>Experience</button>
+<button onclick="go('projects')"><i class="fa-solid fa-diagram-project"></i>Projects</button>
+<button onclick="go('social')"><i class="fa-solid fa-share-nodes"></i>Social</button>
+<button onclick="go('contact')"><i class="fa-solid fa-envelope"></i>Contact</button>
 </nav>
+
+<!-- AUTO IMAGE BANNER -->
+<div class="slider">
+<div class="slides">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+<img src="https://images.unsplash.com/photo-1526378722484-d4c9a5e3a11f">
+<img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769">
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+</div>
+</div>
+
 </header>
 
 <!-- ABOUT -->
 <section id="about">
-<h2><span class="icon"><i class="fa-solid fa-user"></i></span>Professional Profile</h2>
+<h2><span class="icon"><i class="fa-solid fa-user-astronaut"></i></span>About Me</h2>
 <div class="card">
 <p>
-I am <b>Karimul Mowla</b>, a future-focused digital expert from Bangladesh with a strong foundation in technology, business strategy, and innovation.
+I am <b>Karimul Mowla</b>, a multidisciplinary technologist combining
+<b>software engineering, robotics, AI systems, and digital business strategy</b>.
 </p>
 <p>
-Since 2021, I have been building scalable Android applications, modern websites, and data-driven digital growth systems powered by AI and advanced marketing strategies.
-</p>
-<p>
-I combine <b>technology, leadership, creativity, and strategic thinking</b> to help brands, startups, and individuals achieve measurable digital success.
+Since 2021, I have worked on real-world Android apps, websites,
+Arduino-based robotics, and automation projects that focus on performance,
+scalability, and practical impact.
 </p>
 </div>
 </section>
 
 <!-- EDUCATION -->
 <section id="education">
-<h2><span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>Academic Background</h2>
+<h2><span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>Education</h2>
 <div class="grid">
-
 <div class="card">
-<h3>🎓 SSC – Science</h3>
-<p><b>Year:</b> 2019</p>
-<p><b>Grade:</b> 4.39</p>
-<p><b>School:</b> Modhya Sontushpur High School</p>
+<i class="fa-solid fa-school"></i>
+<b>SSC – Science</b>
+<p>2019 • GPA 4.39<br>Modhya Sontushpur High School</p>
 </div>
-
 <div class="card">
-<h3>🎓 HSC – Science</h3>
-<p><b>Year:</b> 2022</p>
-<p><b>Grade:</b> 3.92</p>
-<p><b>College:</b> Mustafizur Rahman University College</p>
+<i class="fa-solid fa-building-columns"></i>
+<b>HSC – Science</b>
+<p>2022 • GPA 3.92<br>Mustafizur Rahman University College</p>
 </div>
-
 <div class="card">
-<h3>🎓 BSc in Electrical & Electronics Engineering</h3>
-<p><b>Status:</b> Running</p>
-<p><b>University:</b> Port City International University</p>
+<i class="fa-solid fa-microchip"></i>
+<b>BSc in Electrical & Electronics Engineering (Running)</b>
+<p>Port City International University</p>
 </div>
-
 </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-<h2><span class="icon"><i class="fa-solid fa-bolt"></i></span>Core Expertise</h2>
+<h2><span class="icon"><i class="fa-solid fa-brain"></i></span>Professional Skills</h2>
 <div class="grid">
-<div class="card"><b>📱 App Development</b><p>High-performance Android apps with modern UI/UX.</p></div>
-<div class="card"><b>🌐 Website Development</b><p>Responsive, fast, SEO-optimized websites.</p></div>
-<div class="card"><b>🤖 AI Management</b><p>Smart AI-powered automation & workflows.</p></div>
-<div class="card"><b>📊 Digital Marketing</b><p>SEO, ASO, Google Ads, Facebook Ads.</p></div>
-<div class="card"><b>👥 Leadership & Team Management</b><p>Business execution & people leadership.</p></div>
-<div class="card"><b>🗣 English Communication</b><p>Professional business & technical communication.</p></div>
+<div class="card"><i class="fa-solid fa-mobile"></i><b>Android Development</b><p>Modern, secure, scalable Android applications.</p></div>
+<div class="card"><i class="fa-solid fa-globe"></i><b>Web Development</b><p>SEO-friendly, responsive business websites.</p></div>
+<div class="card"><i class="fa-solid fa-robot"></i><b>Robotics & Arduino</b><p>Live robotics projects, automation & sensor-based control.</p></div>
+<div class="card"><i class="fa-solid fa-microchip"></i><b>Embedded Systems</b><p>Hardware-software integration & logic control.</p></div>
+<div class="card"><i class="fa-solid fa-bullhorn"></i><b>Digital Marketing</b><p>SEO, ASO, ads & growth strategies.</p></div>
+<div class="card"><i class="fa-solid fa-users"></i><b>Leadership</b><p>Team management, project coordination & execution.</p></div>
+<div class="card"><i class="fa-solid fa-pen-nib"></i><b>Content Writing & Product Review</b><p>Professional, SEO-optimized content creation and review.</p></div>
+<div class="card"><i class="fa-solid fa-language"></i><b>Language Translation</b><p>Accurate multilingual translation for apps & content.</p></div>
 </div>
 </section>
 
-<!-- WORKING -->
-<section id="working">
-<h2><span class="icon"><i class="fa-solid fa-briefcase"></i></span>Professional Working Sectors</h2>
+<!-- WORKING SECTOR -->
+<section id="sector">
+<h2><span class="icon"><i class="fa-solid fa-briefcase"></i></span>Working Sectors</h2>
 <div class="grid">
-<div class="card">📱 <b>App Development</b></div>
-<div class="card">🌐 <b>Website Development</b></div>
-<div class="card">📈 <b>Marketing Strategies</b></div>
-<div class="card">📊 <b>Digital Marketing</b></div>
-<div class="card">✍️ <b>Content Writing</b></div>
-<div class="card">🛍️ <b>Product Review</b></div>
-<div class="card">🌐 <b>Language Translation</b></div>
+<div class="card"><i class="fa-solid fa-code"></i><b>Software Development</b><p>Android apps, websites & dynamic business solutions.</p></div>
+<div class="card"><i class="fa-solid fa-robot"></i><b>Robotics Live Projects</b><p>Arduino & automation-based real-time projects.</p></div>
+<div class="card"><i class="fa-solid fa-chart-pie"></i><b>Marketing Strategy</b><p>Brand growth, audience targeting & digital conversions.</p></div>
+<div class="card"><i class="fa-solid fa-pen-to-square"></i><b>Content & Product Review</b><p>High-quality SEO content & analysis.</p></div>
 </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-<h2><span class="icon"><i class="fa-solid fa-chart-line"></i></span>Professional Experience</h2>
+<h2><span class="icon"><i class="fa-solid fa-award"></i></span>Experience</h2>
 <div class="card">
-<p><b>2021 – Present</b></p>
 <ul>
-<li>Android Application Development</li>
-<li>Professional Website Development</li>
-<li>SEO, ASO, Google Ads & Facebook Ads</li>
-<li>AI-Based Business Automation</li>
+<li>Android & Web Development (2021–Present)</li>
+<li>Robotics & Arduino Live Projects</li>
+<li>Embedded System Prototyping</li>
+<li>AI-assisted Business Automation</li>
+<li>SEO, ASO, Google & Facebook Ads</li>
 </ul>
 </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-<h2><span class="icon"><i class="fa-solid fa-folder-open"></i></span>Selected Demo Projects</h2>
+<h2><span class="icon"><i class="fa-solid fa-diagram-project"></i></span>Demo Projects</h2>
 <div class="grid">
-<div class="card">🛒 <b>E-commerce App</b></div>
-<div class="card">❤️ <b>Matrimony App</b></div>
-<div class="card">📰 <b>News Website</b></div>
-<div class="card">🏢 <b>Business Portfolio</b></div>
+<div class="card"><i class="fa-solid fa-cart-shopping"></i><b>E-commerce App</b></div>
+<div class="card"><i class="fa-solid fa-heart"></i><b>Matrimony App</b></div>
+<div class="card"><i class="fa-solid fa-newspaper"></i><b>News Website</b></div>
+<div class="card"><i class="fa-solid fa-robot"></i><b>Robotics Automation</b></div>
+<div class="card"><i class="fa-solid fa-school"></i><b>Educational App</b></div>
+</div>
+</section>
+
+<!-- SOCIAL -->
+<section id="social">
+<h2><span class="icon"><i class="fa-solid fa-share-nodes"></i></span>Social Links</h2>
+<div class="grid social">
+<div class="card"><a href="https://www.facebook.com/share/1HF4k5VaJA/" target="_blank"><i class="fa-brands fa-facebook" style="color:#1877F2"></i><p>Facebook</p></a></div>
+<div class="card"><a href="https://www.instagram.com/ra__fi_____?igsh=cGZ3dWpzdHB2cjN5" target="_blank"><i class="fa-brands fa-instagram" style="color:#E1306C"></i><p>Instagram</p></a></div>
+<div class="card"><a href="https://youtube.com/@rafi_explore" target="_blank"><i class="fa-brands fa-youtube" style="color:#FF0000"></i><p>YouTube</p></a></div>
+<div class="card"><a href="https://wa.me/8801785544035" target="_blank"><i class="fa-brands fa-whatsapp" style="color:#25D366"></i><p>WhatsApp</p></a></div>
 </div>
 </section>
 
 <!-- CONTACT -->
-<section id="business">
-<h2><span class="icon"><i class="fa-solid fa-envelope"></i></span>Business Inquiries</h2>
+<section id="contact">
+<h2><span class="icon"><i class="fa-solid fa-envelope-open-text"></i></span>Contact</h2>
 <div class="card">
 <p><b>WhatsApp:</b> +8801785544035</p>
 <p><b>Email:</b> mowla01785544@gmail.com</p>
@@ -222,7 +308,7 @@ I combine <b>technology, leadership, creativity, and strategic thinking</b> to h
 </section>
 
 <footer>
-<p>© 2025 Karimul Mowla • Elite Digital Portfolio</p>
+<p>© 2025 Karimul Mowla • All Rights Reserved</p>
 </footer>
 
 <script>
